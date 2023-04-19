@@ -4,7 +4,19 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+import {Provider} from "react-redux";
+import store from './redux/store';
+import {getService} from "./content/httpService/httpService";
+import {fetchTodos} from "./redux/reducer/taskReducer";
+import { ApiProvider } from "@reduxjs/toolkit/query/react";
+//import {taskListApi} from './redux/slice/taskSlice';
+import { productsApi } from "./redux/slice/taskSlice";
 const cache = new InMemoryCache();
+//import { Provider } from 'react-redux'
+//import { applyMiddleware, createStore, compose } from 'redux';
+
+
+//import store from './redux/store';
 
 const client = new ApolloClient({
   cache: cache,
@@ -25,11 +37,17 @@ root.render(
 
     </React.StrictMode>
 );*/
+//store.dispatch(fetchTodos())
+
+
+
 ReactDOM.render(
     <React.StrictMode>
-      <ApolloProvider client={client}>
-        <App/>
-      </ApolloProvider>
+        <ApolloProvider client={client} >
+          <Provider store={store}>
+            <App/>
+          </Provider>
+        </ApolloProvider>
     </React.StrictMode>,
     document.getElementById('root')
 );

@@ -1,0 +1,71 @@
+@use '~@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/type' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+@use '@carbon/react/scss/theme' as *;
+@use '~@carbon/react/scss/colors' as *;
+@use './mixins.scss' as *;
+@use '@carbon/colors' as *;
+@use '@carbon/styles/scss/colors';
+
+.tasklist-page {
+  max-width: 100%;
+}
+
+.tasklist_card {
+  //padding-bottom: $spacing-10 *10;
+  @include landing-page-background;
+}
+
+.tabs-group-content {
+  padding-bottom: $spacing-10;
+  //@include landing-page-background;
+}
+
+.landing-page__r2 {
+  padding-bottom: $spacing-07;
+}
+
+.individual_task {
+  background-color: $layer-02;
+  position: relative;
+  border-radius: 1rem;
+  margin-bottom: 2vh;
+}
+
+.cra-datepicker {
+  .cds--date-picker.cds--date-picker--single .cds--date-picker__input {
+    width: 16rem!important;
+  }
+}
+
+.individual_task .title {
+  color: colors.$blue-50;
+  margin-bottom: $spacing-03;
+}
+
+.individual_task .dueBy {
+  color: colors.$cool-gray-50;
+}
+
+.subtasks .cds--text-input--sm {
+  height: 1.5rem;
+  //width: 32.7rem;
+  margin-right: 0.8rem;
+}
+
+.subtasks .cds--form-item.cds--checkbox-wrapper {
+  //position: fixed !important;
+  position: relative;
+  margin-bottom: 0.25rem;
+  flex: 0.1;
+  padding-right: 1vh
+}
+
+.subtasks-icon {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.trash-icon {
+  color: colors.$red-50;
+}
