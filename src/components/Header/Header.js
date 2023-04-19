@@ -21,8 +21,7 @@ const AppHeader = (props)  => {
           </div>
 
           <HeaderNavigation aria-label="IBM [Platform]">
-            <HeaderMenuItem href="/">Home</HeaderMenuItem>
-            <HeaderMenuItem href="/repopage">RepoPage</HeaderMenuItem>
+            <HeaderMenuItem href="/tasklist">ToDo List</HeaderMenuItem>
 
           </HeaderNavigation>
           <HeaderGlobalBar>
