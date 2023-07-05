@@ -29,3 +29,4 @@ server/node_modules
 server/.env
 server/dump.rdb
 server/dist-server/node_modules
+.vercel
