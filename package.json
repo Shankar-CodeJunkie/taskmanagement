@@ -45,5 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://taskmanagement-47nc.vercel.app"
+  "proxy": "http://taskmanagement-47nc.vercel.app"
 }
