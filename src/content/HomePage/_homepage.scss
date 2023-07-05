@@ -5,6 +5,7 @@
 @use './mixins.scss' as *;
 @use './overrides.scss';
 
+
 .landing-page__illo {
   max-width: 100%;
 }
@@ -28,8 +29,7 @@
 }
 
 .landing-page__subheading {
-  @include type-style('productive-heading-03');
-
+  @include type-style('productive-heading-04');
   font-weight: 600;
 }
 
@@ -41,15 +41,6 @@
   @include breakpoint-between((320px + 1), md) {
     max-width: 75%;
   }
-}
-
-.landing-page__r3 {
-  padding: $spacing-09 $spacing-06;
-  @include landing-page-background;
-}
-
-.landing-page__label {
-  @include type-style('heading-01');
 }
 
 .tabs-group {

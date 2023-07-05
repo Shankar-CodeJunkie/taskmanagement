@@ -30,6 +30,9 @@
   position: relative;
   border-radius: 1rem;
   margin-bottom: 2vh;
+  border-radius: 2vh;
+  background-color: $layer-01;
+  margin: 2vh;
 }
 
 .cra-datepicker {
@@ -68,4 +71,19 @@
 
 .trash-icon {
   color: colors.$red-50;
+}
+
+.page-header {
+  @include type-style('productive-heading-05');
+  margin: 1vh;
+  border-radius: 2vh;
+  color: cds--text-01;
+}
+
+.outer-tile {
+  border-radius: 1vh;
+  background-color: $layer-01;
+  margin: 2vh;
+  padding: 2vh;
+  color: cds--text-01;
 }
